@@ -1,0 +1,31 @@
+# Student work — ignore from curriculum
+
+# Filled answers only (templates are lesson-NN.template.md — not matched)
+weeks/*/submissions/lesson-[0-9][0-9].md
+weeks/*/submissions/checkpoint.md
+
+# Practice artifacts (keep folder README)
+weeks/*/practice/**
+!weeks/*/practice/README.md
+!weeks/*/practice/**/.gitkeep
+
+# Apps live in student workbooks
+projects/**
+!projects/README.md
+
+# Curriculum specs (no student code)
+!weeks/*/spec/**
+
+# Local / secrets
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+
+# Build caches (later apps)
+node_modules/
+dist/
+build/
+.gradle/
+**/DerivedData/

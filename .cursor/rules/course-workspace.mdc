@@ -1,0 +1,51 @@
+---
+description: Раскладка ai-course — entrypoint .cursor/; Teacher teacher/; Student student/; Author author/. Роутинг проверки и scaffold.
+alwaysApply: true
+---
+
+# Course workspace layout
+
+## Четыре слоя (не смешивать)
+
+| Слой | Путь | Portable? | Кто |
+|------|------|-----------|-----|
+| Entrypoint | `.cursor/` | Нет | stub + router |
+| Teacher | `teacher/` | Нет | проверка ДЗ, scaffold ТЗ |
+| Student | `student/` | Да | харнес ученика |
+| Author | `author/` | Нет | maintainer curriculum |
+
+Подробности: `docs/cursor-layout.md`.
+
+## Куда класть новое
+
+1. Ученический rule/skill → **`student/…`** (не `teacher/`, не корневой `.cursor/` кроме stub).
+2. Проверка ДЗ / scaffold приложений → **`teacher/…`** + тонкий stub в `.cursor/skills/`.
+3. Правка curriculum (уроки, rubrics) → **`author/…`** или `weeks/` — не student.
+4. Артефакты уроков → `weeks/`, `templates/`, `docs/`.
+5. Ответы студента → workbook only (`submissions/`, `practice/`, `projects/`).
+
+## Роутинг проверки ДЗ
+
+«проверь домашку» / checkpoint:
+
+1. `teacher/rules/teacher.mdc`
+2. `teacher/skills/grade-homework/SKILL.md`
+
+## Роутинг scaffold
+
+«scaffold tip calculator» / `scaffold-*`:
+
+1. `teacher/skills/scaffold-apps/README.md`
+2. Полный skill в `teacher/skills/scaffold-<app>/SKILL.md`
+
+## Student harness в чате
+
+Если урок ссылается на student skill — читай `student/skills/...` (через @ или явный путь). Не подменяй Teacher-skills.
+
+## Запрещено
+
+- QA skills в `teacher/`
+- Teacher/Author в `student/`
+- Полный Teacher в `.cursor/` (только stub)
+- Копировать `teacher/` или `author/` в `projects/`
+- Экспортировать `.cursor/` COURSE_ONLY в личные проекты — см. `.cursor/COURSE_ONLY.md`
