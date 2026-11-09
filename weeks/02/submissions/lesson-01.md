@@ -39,7 +39,7 @@
 ## D — Git (HAND)
 
 - Repo URL: [https://github.com/lordsxrom/my-ai-course-nasty](https://github.com/lordsxrom/my-ai-course-nasty)
-- Commit: *(заполнить после* `git commit` *+* `git push` *проекта и этой сдачи)*
+- Commit: `f9a4d4a191dbd8f7032a1b25025fbf28d7b20148`
 - Branch: main
 
 
@@ -88,7 +88,7 @@ DoD:
 | --- | ------------------ | ------ | ------------------------------------------------------------------------------- |
 | 1   | Проект + calc.ts   | Pass   | `projects/web-tip-calculator/src/lib/calc.ts` — `calculateTip`, `validateInput` |
 | 2   | Smoke таблица      | Pass   | Часть A: 3 строки, A1 expected total=110                                        |
-| 3   | Push в свой GitHub | Fail   | Commit/push ещё не сделаны — заполнить часть D после push                       |
+| 3   | Push в свой GitHub | Pass   | Commit `f9a4d4a` запушен в https://github.com/lordsxrom/my-ai-course-nasty (main) |
 | 4   | via agent          | Pass   | `artifact_via: agent` в How I worked / C                                        |
 | 5   | npm run dev ок     | Pass   | Vite ready → [http://localhost:5173/](http://localhost:5173/)                   |
 
@@ -97,4 +97,4 @@ DoD:
 
 ### Мета
 
-На практике увидела разницу «бумажный» QA (модуль 1) vs артефакт = код + smoke в браузере. Важно принимать diff только в allowlist и проверять `npm run dev` руками, а не доверять Agent на слово. Осталось зафиксировать commit и push в свой remote.
+На практике увидела разницу «бумажный» QA (модуль 1) vs артефакт = код + smoke в браузере. Важно принимать diff только в allowlist и проверять `npm run dev` руками, а не доверять Agent на слово. Commit и push в свой remote сделаны (часть D).
