@@ -1,0 +1,90 @@
+.app {
+  max-width: 28rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+.app h1 {
+  margin: 0 0 0.35rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 0 0 1.5rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.tip-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.field input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font: inherit;
+  font-weight: 400;
+}
+
+.field input:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 1px;
+}
+
+.errors {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  list-style: disc inside;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+  color: #991b1b;
+  font-size: 0.875rem;
+}
+
+.results {
+  display: grid;
+  gap: 0.65rem;
+  padding: 1rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  font-size: 0.95rem;
+}
+
+.result-row strong {
+  font-variant-numeric: tabular-nums;
+}
+
+.reset {
+  justify-self: start;
+  padding: 0.55rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.reset:hover {
+  background: #f1f5f9;
+}
