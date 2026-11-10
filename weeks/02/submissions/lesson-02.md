@@ -46,7 +46,7 @@ npm test → exit 0: 11 passed.
 | 3 | Unit только calc / validateInput, без React render | Pass | `calc.test.ts` импортирует только `calculateTip`, `validateInput` из `./calc`; нет `@testing-library` / render |
 | 4 | Vitest + script `test` в проекте | Pass | `package.json`: `"test": "vitest run"`, devDependency `vitest`; файл `src/lib/calc.test.ts` |
 | 5 | Трассировка HAND ≥6 | Pass | Часть A: 11 строк Case / Requirement → test name |
-| 6 | Commit + push | Pass | Часть E: `ae4fbbf538680d8a7418a1ca7ec99f1916544a0f` в [repo](https://github.com/lordsxrom/my-ai-course-nasty) (main) |
+| 6 | Commit + push | Pass | Часть E: `31a4291a2f47511ee1cce7e800d322f16971962b` в [repo](https://github.com/lordsxrom/my-ai-course-nasty) (main) |
 | 7 | AI-артефакт через Agent | Pass | Часть C: `artifact_via: agent` |
 
 Мета (сложный тип теста): сложнее автоматизировать **negative**, чем boundary. Boundary (tip=0 / tip=30) — прямые assert'ы на расчёт. Negative (tip=31, tip=-1, split=0/21) требует отдельно проверять `validateInput` (`valid: false` + текст ошибки), а не только `calculateTip`.
@@ -54,9 +54,10 @@ npm test → exit 0: 11 passed.
 ## E — Git
 
 - Repo URL: [https://github.com/lordsxrom/my-ai-course-nasty](https://github.com/lordsxrom/my-ai-course-nasty)
-- Commit: `ae4fbbf538680d8a7418a1ca7ec99f1916544a0f`
+- Commit: `31a4291a2f47511ee1cce7e800d322f16971962b`
 - Branch: main
-- Commit URL: [https://github.com/lordsxrom/my-ai-course-nasty/commit/ae4fbbf538680d8a7418a1ca7ec99f1916544a0f](https://github.com/lordsxrom/my-ai-course-nasty/commit/ae4fbbf538680d8a7418a1ca7ec99f1916544a0f)
+- Commit URL: [https://github.com/lordsxrom/my-ai-course-nasty/commit/31a4291a2f47511ee1cce7e800d322f16971962b](https://github.com/lordsxrom/my-ai-course-nasty/commit/31a4291a2f47511ee1cce7e800d322f16971962b)
+- Tests commit: `ae4fbbf538680d8a7418a1ca7ec99f1916544a0f`
 
 ## F — Промпт (этот коммит сдачи)
 
