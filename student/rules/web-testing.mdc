@@ -1,0 +1,14 @@
+---
+description: Web / tip calculator / тесты — unit, npm test, DoD с зелёным CI. Подключай при работе над projects/web-tip-calculator и web-тестами.
+alwaysApply: false
+---
+
+# Web testing
+
+- Сначала unit на чистую логику (`calc` / lib), потом UI и e2e.
+- Перед сдачей и перед «готово» обязательно гоняй `npm test` в каталоге проекта.
+- DoD считается выполненным только при зелёном CI (GitHub Actions), не только при локальном прогоне.
+- Не коммить изменения без работающего `test` script в `package.json`.
+- Тесты должны трассироваться на требования / кейсы; имена — по смыслу сценария.
+- Падающий тест чини до merge; не игнорируй красный job в Actions.
+- Rule живёт в `student/rules/` (portable harness), не в Teacher и не в корневом `.cursor/` как полный QA-набор.

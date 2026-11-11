@@ -2,6 +2,8 @@
 
 Учебный MVP (Vite + React + TypeScript) для недели 2 курса.
 
+CI: см. Actions
+
 ## Запуск
 
 ```bash
